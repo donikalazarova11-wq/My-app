@@ -1,7 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-
+app.use(express.static('./'));
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
 app.use(cors());
 app.use(express.json());
 
