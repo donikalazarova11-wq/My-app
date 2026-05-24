@@ -1,14 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Тук се връща твоят дизайн */
+        .card { background: white; padding: 30px; border-radius: 15px; text-align: center; }
+        button { background: #6200ee; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #4b00b4; }
+    </style>
+</head>
 <body>
     <div class="card">
         <h1>Здравей, Доника!</h1>
-        <div class="points-box">
-            Твоите точки: <span id="points-display">0</span>
-        </div>
+        <div class="points-box">Твоите точки: <span id="points-display">0</span></div>
         <div class="value" id="value-display">0$</div>
-        <p style="color: #888; font-size: 0.9rem;">Пазарна стойност</p>
-        
+        <p>Пазарна стойност</p>
         <button onclick="izpratiDannite()">Добави точки</button>
     </div>
-
     <script src="script.js"></script>
 </body>
+</html>
